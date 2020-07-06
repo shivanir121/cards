@@ -1,0 +1,17 @@
+@font-face {
+    font-family: garaRegular;
+    src: url(font/garaRegular.ttf);
+}
+
+.gara {
+    font-family: garaRegular;
+}
+
+@font-face {
+    font-family: NunitoRegular;
+    src: url(font/NunitoRegular.ttf);
+}
+
+.nunito {
+    font-family: NunitoRegular;
+}
