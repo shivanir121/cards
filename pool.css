@@ -1,0 +1,331 @@
+.container-fluid {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.poolBackground {
+    background-image: url("image/main.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 565px;
+    height: 288px;
+    position: relative;
+    margin-bottom: 61px;
+}
+
+.poolImageContainer {
+    background-image: url(imgi1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 264px;
+    position: absolute;
+    top: 11px;
+    left: 30px;
+    box-shadow: 3px 5px 18px 0px #08061a;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 1 1 1;
+}
+
+.poolRightContentContainer {
+    position: absolute;
+    top: 38px;
+    padding-left: 28px;
+    width: 80%;
+}
+
+.productName {
+    font-size: 20px;
+    background: linear-gradient(45deg, #8e602c, #f8ed8d);
+    background: -webkit-linear-gradient(90deg, #8e602c, #f8ed8d, #8e602c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 3px 3px #000);
+    font-weight: 900;
+    margin-bottom: .9rem;
+}
+
+.title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(90deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.data {
+    font-size: 19px;
+    background: -webkit-linear-gradient(90deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.focused {
+    font-size: 20px;
+    background: -webkit-linear-gradient(90deg, #f8ed8d, #f8ed8d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.drawDate, .winningOdd, .actualPrice, .tokenPrice {
+    background: -webkit-linear-gradient(90deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 4px 3px #000);
+    font-weight: 600;
+    margin-bottom: .6rem;
+}
+
+/* On hover style */
+
+.tokenPrice .title {
+    position: absolute;
+    right: 5px;
+    top: -39px;
+}
+
+.tokenPrice .data {
+    position: absolute;
+    right: 38px;
+    top: 4px;
+    border: 1px solid yellow;
+    padding: 2px 6px;
+}
+
+.actualPrice .data {
+    position: absolute;
+    top: 42px;
+    border: 1px solid yellow;
+    padding: 2px 6px;
+    /* box-shadow: 0px 6px 21px -9px black; */
+}
+
+.poolBackground:hover .tokenPrice .title {
+    position: initial;
+}
+
+.poolBackground:hover .tokenPrice .data {
+    position: initial;
+    border: none;
+    margin-right: 51px;
+}
+
+.poolBackground:hover .actualPrice .data {
+    position: initial;
+    border: none;
+    margin-right: 8px;
+}
+
+.poolBackground:hover .productName, .drawDate, .winningOdd, .actualPrice, .tokenPrice {
+    margin-bottom: .5rem;
+}
+
+/* end of on hover transition */
+
+.buyTicket {
+    visibility: hidden;
+    transform: translateY(-17px);
+    margin-top: 17px;
+}
+
+.poolBackground:hover .buyTicket {
+    visibility: visible;
+}
+
+.btnGold {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 1 1 1;
+    font-size: 18px;
+    background: linear-gradient(45deg, #8e602c, #f8ed8d);
+    background: -webkit-linear-gradient(45deg, #8e602c, #f8ed8d, #8e602c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 4px 20px;
+    box-shadow: 8px 4px 15px black;
+}
+
+/* media queries  */
+
+@media (min-width: 576px) and (max-width: 823px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .poolBackground {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:200px) and (max-width: 575px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        padding-left: 269px;
+        width: 90%;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+    .poolBackground {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:575px) and (max-width: 632px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:633px) and (max-width: 763px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 81%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:764px) and (max-width: 864px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 79%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:865px) and (max-width: 929px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 66%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:930px) and (max-width: 969px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 61%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:970px) and (max-width: 1132px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container-fluid {
+        width: 56%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1133px) and (max-width: 1259px) {
+    .container-fluid {
+        width: 100%;
+    }
+    .poolBackground {
+        margin-bottom: 29px;
+    }
+}
+
+@media (min-width:1259px) and (max-width: 1300px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        width: 80%;
+    }
+    .container-fluid {
+        width: 94vw;
+    }
+}
+
+@media (min-width:1301px) and (max-width: 1400px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        width: 80%;
+    }
+    .container-fluid {
+        width: 89vw;
+    }
+}
+
+@media (min-width:1401px) and (max-width: 1500px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        width: 80%;
+    }
+    .container-fluid {
+        width: 88vw;
+    }
+}
+
+@media (min-width:1501px) and (max-width: 1600px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        width: 80%;
+    }
+    .container-fluid {
+        width: 82vw;
+    }
+}
+
+@media (min-width:1637px) and (max-width: 1600px) {
+    .poolRightContentContainer {
+        position: absolute;
+        top: 38px;
+        width: 80%;
+    }
+    .container-fluid {
+        width: 72vw;
+    }
+}
+
+@media (min-width:1800px) and (max-width: 1920px) {
+    .poolBackground {
+        width: 100%;
+        height: 349px;
+    }
+    .poolImageContainer {
+        width: 13.594vw;
+        height: 324px;
+    }
+    .poolRightContentContainer {
+        top: 56px;
+    }
+}
